@@ -154,7 +154,7 @@ body {
 }
 .tarjeta .tarjeta__detalle p {
   border-radius: 0.3rem;
-  box-shadow: 0 4px 15px rgba(14, 36, 49, 0.15);
+  /*box-shadow: 0 4px 15px rgba(14, 36, 49, 0.15);*/
 }
 .tarjeta .tarjeta__detalle a {
   padding: 1rem;
@@ -172,7 +172,7 @@ body {
 }
 
 .tarjeta:hover {
-  animation: anim1 0.5s ease-in-out alternate;
+  /*animation: anim1 0.5s ease-in-out alternate;*/
 }
 
 /*Ver los Puntos de cortes*/
