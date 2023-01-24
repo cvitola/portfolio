@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 body {
   font-family: "Poppins", sans-serif;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 /*animacion*/
@@ -50,16 +54,16 @@ body {
 
 /*avatar*/
 .avatar {
-  height: 20rem;
-  width: 20rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
-  border: 0.2rem solid #6381ed;
+  border: 0.2rem solid #4c5fa3;
   box-shadow: 0 4px 15px rgba(14, 36, 49, 0.15);
 }
 
 .avatar-grande {
-  height: 25rem;
-  width: 25rem;
+  height: 15rem;
+  width: 15rem;
   border-radius: 0.2rem;
   box-shadow: 0 4px 15px rgba(14, 36, 49, 0.15);
 }
@@ -89,10 +93,11 @@ body {
   box-shadow: 0 4px 15px rgba(14, 36, 49, 0.15);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .sobre-mi h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0.5rem;
   margin: 0.2rem;
 }
@@ -134,10 +139,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 1rem;
   margin: 1rem;
-  background-color: white;
   border-radius: 5px;
   border-bottom: 0.3rem solid #ed6663;
   animation: sombras 5s infinite;
@@ -187,14 +192,14 @@ body {
     grid-template-rows: 1fr;
   }
 }
-/*
 
-@media (max-width: 768px) {  
+
+@media only screen and (min-width:577px) and (max-width:1024px){  
     .rejilla{
         grid-template-columns:  1fr 1fr;
     }
 }
-
+/*
 @media (max-width: 992px) {
     .rejilla{
         grid-template-columns:  1fr 1fr 1fr;
@@ -285,8 +290,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=653&q=80");
 }
 .card-general .skills_card {
-  padding: 0.2rem;
-  margin: 0.2rem;
+
   border-radius: 0.3rem;
   box-shadow: 0 4px 15px rgba(14, 36, 49, 0.15);
   display: flex;
@@ -340,7 +344,8 @@ body {
   background: #F4F4F4;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   height: 100px;
   padding: 0px 50px;
   color: rgba(0, 0, 0, 0.3);
